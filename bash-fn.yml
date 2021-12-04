@@ -7,3 +7,5 @@ functions:
     lang: dockerfile
     handler: ./bash-fn
     image: docker.io/felipecruz/bash-fn:latest
+    secrets:
+      - secret-api-key
