@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  bash-fn:
+    lang: dockerfile
+    handler: ./bash-fn
+    image: docker.io/felipecruz/bash-fn:latest
